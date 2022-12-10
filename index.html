@@ -1,0 +1,316 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Stylesheet-->
+        <link rel="stylesheet" href="style.css">
+
+      <title>PESO Cabuyao</title>
+      <link rel="icon" type="image/x-icon" href="images/peso.png">
+  </head>
+  <body">
+
+    <div class="col s12 m4">
+    <center> <a href="#!" class="brand-logo"><img src="images/peso.png" style="height:200px; padding-left: 100px; padding-top: 10px;"></a>
+    </center>
+    </div>
+  <div class="container">
+      <nav class="red" style="height: 60px; border-top: 30px; border-radius: 20px;">
+          <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a href="#" class="brand-logo black-text" style="padding-left: 25px;"><b>Public Employment Service Office</b></a>
+          <ul class="right hide-on-med-and-down">
+            <b><li><a href="index.html" style="color:black">Home |</a></li></b>
+            <b><li><a href="#about" style="color:black" >About | </a></li></b>
+            <b><li><a href="jobs.html" style="color:black" >Jobs | </a></li></b>
+            <b><li><a class="modal-trigger" href="#modal1" style="color:black">Contact |</a></li></b>
+            <b><li><a class="modal-trigger" href="#modal2" style="color:black"> Employee Login</a></li></b>
+          </ul>
+        </div>
+      </nav>
+      <!--Sidenav-->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html"><i class="material-icons blue-text">home</i>Home</a></li>
+        <li><a href="#about"><i class="material-icons black-text">insert_comment</i>About</a></li>
+        <li><a href="jobs.html"><i class="material-icons red-text">business_center</i>Jobs</a></li>
+       <li><a class="modal-trigger" href="#modal1" href="#modal1"><i class="material-icons green-text">call</i>Contact</a></li>
+        <li><a class="modal-trigger" href="#modal2"><i class="material-icons purple-text">account_circle</i>Employee Login</a></li>    
+      </ul>
+  <!-- Modal Structure, Contact -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12 m6">
+    <h5><b>PESO CABUYAO</b></h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.5834174790602!2d121.12169485067098!3d14.277499989959907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d860356d6ef5%3A0x74d259fe1c6b6c12!2sCabuyao%20Public%20Market!5e0!3m2!1sen!2sph!4v1670632624449!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <p>Address: 3RD FLOOR CABUYAO RETAIL PLAZA</p>
+      <p>Contact Number:+49 5447 354</p>
+      <p>Email: pesocabuyaocity@gmail.com</p>
+   </div>
+   <div class="col s12 m6">
+    <center><h6><b>Inquiries / Concern / Feedback</b></h6></center>
+    <div class="container">
+      <form action="">
+        <label for="fname" style="color:black" >Given Name</label>
+        <input style="border-style: groove; height: 25px;" type="text" id="fname" name="firstname" placeholder="Given Name">
+        <label for="lname">Last Name</label>
+        <input style="border-style: groove; height: 25px;" type="text" id="lname" name="lastname" placeholder="Last Name">    
+        <label for="lname">Email Address</label>
+        <input style="border-style: groove; height: 25px;" type="text" id="email" name="email" placeholder="Place you email">   
+        <label for="subject"></label>
+        <textarea id="subject" name="subject" placeholder="Type Here" style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+      </div>
+  </div>
+  <br>
+  <br>
+    <div class="modal-footer">
+     <center> <a href="#!" class="modal-close waves-effect waves-green btn red">Close</a></center>
+    </div>
+  </div>  
+    </div>
+    <!-- Modal Structure, Log In -->
+  <div id="modal2" class="modal modal-fixed-footer" style="height: 600px; width: 550px; border-radius: 30px;">
+    <div class="modal-content">
+  <div class="row">
+   <!--Log In  Content-->
+    <center><i class="material-icons red-text large">account_circle</i><h3>Log In</b></h3></center>
+    <center><p>Don't have account? Click <a href="">here</a></p></center>
+    <center><p>Forgot Password? <a href="">Reset</a></p></center>
+    <div class="container">
+      <form action="">
+        <div class="container">
+        <label for="uname" style="color:black" >User Name</label>
+        <input style="border-style: groove; height: 25px;" type="text" id="uname" name="firstname" placeholder="Enter Username">
+        <label for="password" style="color:black" >Password</label>
+        <input style="border-style: groove; height: 25px;" type="password" id="password" name="firstname" placeholder="Enter Password">
+        <button class="btn waves-effect waves-light red" type="submit" name="action">Login
+          <i class="material-icons right">send</i>
+        </button>
+        <button class="btn waves-effect waves-light grey" type="submit" name="action">Clear
+          <i class="material-icons right">close</i>
+        </button>
+        
+      </div>
+      </form>
+    </div> 
+      
+    </div>
+  </div>
+    <div class="modal-footer">
+     <center> <a href="#!" class="modal-close waves-effect waves-green btn red">Close</a></center>
+    </div>
+  </div>
+         
+    </div>
+    </div>
+  </div>
+    <br>
+    <div class="container">
+      <!--Slider-->
+      <div class="slider" style="padding-left: 10px ;">
+        <ul class="slides">
+          <li>
+            <img src="images/recent1.jpg"> <!-- random image -->
+          </li>
+          <li>
+            <img src="images/recent2.jpg"> <!-- random image -->
+          </li>
+          <li>
+            <img src="images/recent3.jpg"> <!-- random image -->
+          </li>
+          <li>
+            <img src="images/recent4.jpg"> <!-- random image -->
+          </li>
+        </ul>
+      </div>
+    </div>
+      <div class="container grey lighten-2" style="border-radius: 30px;">
+      <H4 style="padding-left: 20px; padding-top: 10px; color: rgb(0, 0, 0);" ><b>Recent Activities</b></H4>
+  <br>
+    <!--Card1-->
+    <div class="row">
+      <div class="col s12 m9">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="images/pat.jpg" style="height:370px" >
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4"><b>Project Angel Tree</b><i class="material-icons right">more_vert</i></span>
+     <p>December 1, 2022. Sta. Rosa Laguna</p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4"><b>Project Angel Tree</b><i class="material-icons right">close</i></span>
+        <p>Ang ating pong tanggapan, PESO Cabuyao ay masuwerteng naimbitahan na makiisa sa isinagawang Project Angel Tree (PAT) ngayong araw sa Santa Rosa Auditorium, Rizal Blvd, Santa Rosa City, Laguna.
+          Sa pagtutulungan ng Department of Labor and Employment (DOLE), iba't ibang kumpanya at Local Government Units sa Laguna, tayo ay nakapagbahagi ng mga programa sa ating mga child laborers at kani-kanilang pamilya na may layuning mapaganda ang kanilang buhay  sa pamamagitan ng pagbibigay ng tulong at pangunahing pangangailangan sa kanila. 
+          Tunay na walang sawa sa pagkilos ang ating tanggapan dahil sa PESO, layunin nating mabigyan ng maginhawang buhay ang lahat ng mamamayan sa Cabuyao. 
+          #DEkalidadNaHanapbuhaySaBawatBahay</p>
+      </div>
+    </div>
+  </div> <!--End of Column-->
+  <div class="col s12 m3">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="images/bonifacio.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4 "><b>Bonifacio Day</b><i class="material-icons right">more_vert</i></span>
+      <p>November 30, 2022</p>
+      </div>
+      <div class="card-reveal">
+       <span class="card-title grey-text text-darken-4"><b>Bonifacio Day</b><i class="material-icons right">close</i></span>
+        <p>Happy Holiday mga ka-PESO!
+
+          Ngayong araw ay kaarawan ng ating bayani na si Andres Bonifacio, ito ay itinalagang REGULAR HOLIDAY batay sa Act of 2946.
+          
+          Ito ay nangangahulugan na bawat manggagawang papasok sa araw na ito ay makakatanggap ng 200% o DOUBLE PAY ng kanilang regular na sahod.
+          
+          Dagdag pa rito, kung ikaw naman ay nag-OVER TIME , makakatanggap ka pa ng 30% na extra hours sa kabuuan ng kanilang rate kada oras.
+          
+          Ngunit, kung ang empleyado naman ay hindi pumasok ngayong araw, may karapatan pa rin siyang matanggap ng buo ang kaniyang sweldo ngayong araw.
+          
+          Ito ay isa muling paalala mula sa ating PESO Cabuyao na naglalayong maingatan ang karapatan ng bawat manggagawang Cabuyeño!</p>
+      </div>
+    </div>
+  </div> <!--End of Column-->
+  
+  </div>
+  </div>
+
+  <!--Videos-->
+  
+  <div class="container grey lighten-2" style="padding-left: 20px; padding-top: 10px; border-radius: 30px;">
+    <h4 style="color:rgb(5, 5, 5);"><b>More About PESO</b></h4>
+    <div class="row">
+      <div class="col s12 m4">
+        <h6><b>Isang Tanong, Isang Sagot Part 1</b></h6>
+        <div class="video-container">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPESOCabuyaoCity%2Fvideos%2F759139091826331%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+        <p style="padding-left: 5px">Isang Tanong, Isang Sagot! ☝️
+          Episode 1: SINO SI PESO?
+          Tara na't subaybayan ang programang handog ng ating tanggapan - PESO Cabuyao, na kung saan sasagot sa katanungan ng karamihan na "Ano nga ba ang PESO? Bakit ito natatatag at ano ang gampanin nito".
+          Halina na't samahan ninyo kaming manood</p>
+      </div>
+      <div class="col s12 m4" id="about">
+        <h6><b>Isang Tanong, Isang Sagot Part 2</b></h6>
+        <div class="video-container"> 
+          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPESOCabuyaoCity%2Fvideos%2F823960532383941%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+        <p style="padding-left: 5px">Isang Tanong, Isang Sagot!
+          Episode 2: ANO NGA BA ANG MGA PROGRAMA NI PESO?
+          Kung sa unang episode, nakilala natin kung ano ang PESO, ngayon naman ay aalamin natin kung ano-ano nga ba ang mga programang ibinabahagi nito.
+          Tara na, sabay-sabay nating panoorin ang Isang Tanong, Isang Sagot!</p>
+      </div>
+      <div class="col s12 m4">
+        <h6><b>Isang Tanong, Isang Sagot Part 3</b></h6>
+        <div class="video-container">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPESOCabuyaoCity%2Fvideos%2F1313627636107890%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+        <p style="padding-left: 5px">Isang Tanong, Isang Sagot!
+          Episode 2: ANO NGA BA ANG MGA PROGRAMA NI PESO?
+          Kung sa unang episode, nakilala natin kung ano ang PESO, ngayon naman ay aalamin natin kung ano-ano nga ba ang mga programang ibinabahagi nito.
+          Tara na, sabay-sabay nating panoorin ang Isang Tanong, Isang Sagot!</p>
+
+          
+      </div>
+      <div class="col s12 m4">
+        <h6><b>Federation of LAGUNA PESO Visits Cabuyao PESO Location</b></h6>
+        <div class="video-container">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPESOCabuyaoCity%2Fvideos%2F2098420910329522%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPESOCabuyaoCity%2Fvideos%2F405264388468241%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+        <p style="padding-left: 5px">
+          Welcome to Cabuyao City, Federation of Laguna PESO Officers Inc. ! ❤️🤍
+          </p>  
+      </div>
+      <div class="col s12 m4">
+        <h6><b>100 Days of Service Repost PESO Cabuyao</b></h6>
+        <div class="video-container">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPESOCabuyaoCity%2Fvideos%2F2831073870375664%2F&show_text=false&width=336&t=0" width="336" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+        <p style="padding-left: 5px">Mula sa Public Employment Service Office - Cabuyao City, nais po namin ibahagi sa inyo ang aming 100 days of service Report, naglalaman po ito ng aming mga nagawa, ginagawa at mga gagawin pang mga proyekto sa patuloy na pagpapaunlad ng DEkalidad Na HAnapbuhay sa bawat bahay ng pamilyang Cabuyeño, alinsunod po sa IHELP Program ng ating mahal na punong lungsod Mayor Dennis DenHa Hain.
+          Sa tulong at gabay po ng ating mahal na mayor, ang aming mga program ay patuloy na naisasakatuparan katuwang ang iba’t ibang ahensya, institusyon, departmento, locators at piling mga indibidwal.
+          Nais din po namin ipaabot ang aming pasasalamat sa bumubuo ng Sangguniang Panglungsod sa patuloy na pagsuporta at pakikiisa sa aming mga programa.
+          #PESOCabuyaoCity
+          #DEkalidadNaHAnapbuhay
+          #DenHasabawatbahay
+          #DenHa
+          #PeraNgBayanIbalikSaMamamayan   </p> 
+      </div>
+      <div class="col s12 m4">
+        <h6><b>Isang Tanong, Isang Sagot Part 3</b></h6>
+        <div class="video-container">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPESOCabuyaoCity%2Fvideos%2F1313627636107890%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+        <p style="padding-left: 5px">Isang Tanong, Isang Sagot!
+          Episode 2: ANO NGA BA ANG MGA PROGRAMA NI PESO?
+          Kung sa unang episode, nakilala natin kung ano ang PESO, ngayon naman ay aalamin natin kung ano-ano nga ba ang mga programang ibinabahagi nito.
+          Tara na, sabay-sabay nating panoorin ang Isang Tanong, Isang Sagot!</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!--Carousel-->
+  <div class="container grey darken-1" style="padding-left: 20px; padding-top: 10px; border-radius: 30px;">
+    <h4 style="color: rgb(8, 8, 8);"><b>Our Partner Companies:</b></h4>
+    <br>
+
+      <div class="carousel" style="position: center;">
+    <a class="carousel-item" href="#one!"><img src="images/ab.jpeg"></a>
+    <a class="carousel-item" href="#two!"><img src="images/toshiba.png"></a>
+    <a class="carousel-item" href="#three!"><img src="images/Hitachi-Logo-Font.jpg" style="height: 200px"></a>
+    <a class="carousel-item" href="#four!"><img src="images/onlinecrib-co.png"></a>
+    <a class="carousel-item" href="#five!"><img src="images/ivoclar-vivadent-inc.png"></a>
+    <a class="carousel-item" href="#one!"><img src="images/ab.jpeg"></a>
+    <a class="carousel-item" href="#two!"><img src="images/toshiba.png"></a>
+    <a class="carousel-item" href="#three!"><img src="images/gemphil.jpg" style="height: 200px"></a>
+    <a class="carousel-item" href="#four!"><img src="images/sumiden.png"></a>
+    <a class="carousel-item" href="#four!"><img src="images/onlinecrib-co.png"></a>
+    <a class="carousel-item" href="#five!"><img src="images/ivoclar-vivadent-inc.png"></a>
+    <a class="carousel-item" href="#five!"><img src="images/ionics.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="images/ATEC-Logo-150x55.png"></a>
+  </div>
+  <br>
+  </div>
+  <br>
+  
+    <div class="footer-copyright">
+      <div class="container black-text">
+    <center><b>2022 © PESO Cabuyao</center> </b>
+      </div>
+    </div>
+ 
+
+  <!--JQuery CDN-->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!---script-->
+  <script>
+      $(document).ready(function(){
+          <!--Sidenav Navbar-->
+      $('.sidenav').sidenav();
+      <!--Slider-->
+      $('.slider').slider({
+        
+          indicators : false, duration: 2500, height: 400,
+          
+      });
+      $(".dropdown-trigger").dropdown();
+      <!--Carousel-->
+      $('.carousel').carousel({
+        fullWidth: true, padding:50, numVisible:10, 
+      });
+      $('.modal').modal();
+    });
+  </script>
+  </body>
+  </html>
