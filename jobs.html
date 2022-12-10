@@ -173,8 +173,23 @@
   <!-- Compiled and minified JavaScript -->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!---script-->
-  <script>
-      
+<script>
+      $(document).ready(function(){
+          <!--Sidenav Navbar--> 
+      $('.sidenav').sidenav();
+      <!--Slider-->
+      $('.slider').slider({
+        
+          indicators : false, duration: 2500, height: 400,
+          
+      });
+      $(".dropdown-trigger").dropdown();
+      <!--Carousel-->
+      $('.carousel').carousel({
+        fullWidth: true, padding:50, numVisible:10, 
+      });
+      $('.modal').modal();
+    });
   </script>
   </body>
   </html>
